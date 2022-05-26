@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block titulo %} Nosotros {% endblock %}
+
+{% block contenido %} 
+
+<link rel="stylesheet" href="../../static/styles/nosotros.css">
+
+<section>
+
+    <div class="w-75 m-auto text-center" id="equipo">
+        <h1 class="mt-5 mb-5 fs-2">Nos encontramos <span class="text-primary"> Ubicados en</span></h1>
+       
+    </div>
+
+
+    <div id="local" class="border-2">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239.10449821708147!2d-68.14059059014696!3d-16.492139397283978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2142e5a40593%3A0x56b69032213a6b0b!2sSan%20Pablo%20Decoraciones!5e0!3m2!1ses!2sbo!4v1652073461845!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <div class="wrapper">
+                <h2>Ubicado en La Paz Bolivia</h2>
+                <h2 class="text-primary mb-4" id="typewriter"></h2>
+                <p class="fs-5 text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, minima?</p>
+                <section class="d-flex" id="numeros-local">
+                    <div>
+                        <p class="text-primary fs-5">248</p>
+                        <p>Dias de sol</p>
+                    </div>
+                    <div>
+                        <p class="text-primary fs-5">100%</p>
+                        <p>Aprobado</p>
+                    </div>
+                    <div>
+                        <p class="text-primary fs-5">16 °C</p>
+                        <p>Temperatura</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="seccion-contacto" class="border-bottom border-secondary border-2 mt-5">
+    
+    <div id="bg-contactos">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000b76" fill-opacity="1" d="M0,256L16,218.7C32,181,64,107,96,85.3C128,64,160,96,192,101.3C224,107,256,85,288,112C320,139,352,213,384,213.3C416,213,448,139,480,122.7C512,107,544,149,576,149.3C608,149,640,107,672,96C704,85,736,107,768,96C800,85,832,43,864,48C896,53,928,107,960,133.3C992,160,1024,160,1056,170.7C1088,181,1120,203,1152,213.3C1184,224,1216,224,1248,197.3C1280,171,1312,117,1344,101.3C1376,85,1408,107,1424,117.3L1440,128L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#00095e;"></path>
+        </svg>
+    </div>
+
+    <div class="container" id="contenedor-formulario">
+        <div class="titulo-for" class="text-center mb-4">
+            <div><img src="./img/contact.svg" alt="" class="img-fluit"></div>
+            <h2>Contáctanos</h2>
+            <p class="fs-5">Escribenos un mensaje.</p>
+            <form action="">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" require>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Juan Perez" require>
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control" id="tel" placeholder="000-000-000" require>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mesanje"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary w-100 fs-5">Enviar mensaje</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
+<script>
+    const app = document.getElementById('typewriter');
+
+    const typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75
+    });
+
+    typewriter
+    .typeString('Nuestra señora de La Paz')
+    .pauseFor(200)
+    .start();
+</script>
+
+{% endblock %}

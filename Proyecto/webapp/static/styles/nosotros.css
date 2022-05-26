@@ -1,0 +1,46 @@
+#local{
+    background-color: #fff;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width:50%;
+    margin-left: 150px;
+    padding-top: 100px;
+}
+
+
+#numeros-local div{
+    padding: 0 20px 0 0;
+    height: 48;
+}
+
+#numeros-local div:not(:last-child){
+  
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child){
+  
+    padding-left: 20px;
+}
+
+#numeros-local p{
+    margin: 0;
+}
+
+#seccion-contacto{
+    background-color: #fff;
+    min-height: 500px;
+    position: relative;
+}
+
+#contenedor-formulario{
+    position: absolute;
+    top: 40%;
+    left: 50%;transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+    max-width: 500px;
+}

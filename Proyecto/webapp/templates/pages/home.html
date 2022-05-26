@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block titulo %} Home {% endblock %}
+
+{% block contenido %} 
+
+<!-- <link rel="stylesheet" href="../../static/styles/home.css"> -->
+
+<section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'img/cesped.jpg' %}" class="d-block w-75" alt="My image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/cesped.jpg' %}" class="d-block w-75" alt="My image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/cesped.jpg' %}" class="d-block w-75" alt="My image">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev btn-primary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next btn-primary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </section>
+
+  <section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Una tienda unica para cubrir todas tus necesidades</h1>
+    <p class="p-3 fs-4"><span class="text-primary">Global Decoraciones</span> es la tienda donde te ayudamos a que tu hogar se vea mejor.</p>
+</section>
+
+
+<section class="container-fluid">
+    <div class="row w-75 mx-auto servicio-fila">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+            <img src="{% static 'img/team.svg' %}" alt="" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1"> <span class="text-primary">Quiénes somos</span></h3>
+                <p class="px-4">Somos una tienda que le interesa el E-Commerce y la transformación que está viviendo el sector comercial.</p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+            <img src="{% static 'img/img2.svg' %}" alt="" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Lo que hacemos</h3>
+                <p class="px-4">Odonto-UCB es una StartUp nacida en La Paz con la visión de transformar el mundo de la odontología.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row w-75 mx-auto servicio-fila">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+            <img src="{% static 'img/equi.svg' %}" alt="" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Nuestro equipo</h3>
+                <p class="px-4">Un lugar de trabajo divertido, creativo y dinámico nos permite crecer juntos.</p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+            <img src="{% static 'img/val.svg' %}" alt="" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Nuestros valores</h3>
+                <p class="px-4">Nuestros valores reflejan el corazón y el alma de Odonto-UCB.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+{% endblock %}
+
+
+
+

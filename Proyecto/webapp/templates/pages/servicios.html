@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block titulo %} Servicios {% endblock %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="../../static/styles/servicios.css">
+
+<section id="porta">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">            
+                            <h2>Productos y servicios</h2>                           
+                        <a href="#">
+                            <p>Ver más</p>
+                        </a>
+                    </div>
+                    <img src="{% static 'img/img1.jpg' %}" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                            <h2>Productos y servicios</h2>  
+                        <a href="#">
+                            <p>Ver más</p>
+                        </a>
+                    </div>
+                    <img src="{% static 'img/img1.jpg' %}" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                            <h2>Productos y servicios</h2>
+                        <a href="#">
+                            <p>Ver más</p>
+                        </a>
+                    </div>
+                    <img src="{% static 'img/img1.jpg' %}" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                            <h2>Productos y servicios</h2>
+                        <a href="#">
+                            <p>Ver más</p>
+                        </a>
+                    </div>
+                    <img src="{% static 'img/img1.jpg' %}" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
